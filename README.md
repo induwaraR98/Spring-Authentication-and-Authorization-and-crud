@@ -1,55 +1,59 @@
-<project>
-    <name>Spring Boot User Management Project</name>
-    <description>
-        This project is a simple Spring Boot application that includes user authentication and basic CRUD functionality. Users can register, log in, and perform CRUD operations.
-    </description>
-    <features>
-        <feature>User Registration: Users can create an account with a unique username and password.</feature>
-        <feature>Authentication: Login functionality using Spring Security.</feature>
-        <feature>CRUD Operations: Basic create, read, update, and delete operations for users.</feature>
-        <feature>Database Integration: Supports a relational database for storing user data.</feature>
-        <feature>Secure Password Storage: User passwords are encrypted using industry-standard hashing algorithms.</feature>
-    </features>
-    <technologies>
-        <backend>Spring Boot, Spring Security</backend>
-        <database>PostgreSQL</database>
-        <buildTool>Maven</buildTool>
-        <language>Java</language>
-    </technologies>
-    <setupAndInstallation>
-        <step>
-            <title>Clone the Repository</title>
-            <command>git clone https://github.com/your-username/your-repository.git</command>
-            <command>cd your-repository</command>
-        </step>
-        <step>
-            <title>Configure the Database</title>
-            <instruction>
-                Open application.properties or application.yml and update the database configurations as per your setup.
-            </instruction>
-            <command>spring.datasource.url=jdbc:h2:mem:testdb</command>
-            <command>spring.datasource.username=your-username</command>
-            <command>spring.datasource.password=your-password</command>
-            <command>spring.jpa.hibernate.ddl-auto=update</command>
-        </step>
-        <step>
-            <title>Build and Run the Application</title>
-            <command>mvn spring-boot:run</command>
-        </step>
-        <step>
-            <title>Access the Application</title>
-            <instruction>The application runs on http://localhost:8080.</instruction>
-        </step>
-    </setupAndInstallation>
-    <futureEnhancements>
-        <enhancement>Implement role-based access control (RBAC).</enhancement>
-        <enhancement>Add support for JWT-based authentication.</enhancement>
-        <enhancement>Include pagination for user lists.</enhancement>
-        <enhancement>Add unit and integration tests.</enhancement>
-    </futureEnhancements>
-    <license>
-        <type>MIT License</type>
-        <instruction>See the LICENSE file for details.</instruction>
-    </license>
-    <additionalInfo>Feel free to fork, modify, and use this project for your needs!</additionalInfo>
-</project>
+# Spring Boot User Management Project
+
+This project is a simple Spring Boot application that includes user authentication and basic CRUD functionality. Users can register, log in, and perform CRUD operations.
+
+## Features
+
+- **User Registration**: Users can create an account with a unique username and password.
+- **Authentication**: Login functionality using Spring Security.
+- **CRUD Operations**: Basic create, read, update, and delete operations for users.
+- **Database Integration**: Supports a relational database for storing user data.
+- **Secure Password Storage**: User passwords are encrypted using industry-standard hashing algorithms.
+
+## Technologies Used
+
+- **Backend**: Spring Boot, Spring Security
+- **Database**: PostgreSQL
+- **Build Tool**: Maven
+- **Language**: Java
+
+## Setup and Installation
+
+### Clone the Repository
+
+Clone the repository using the following command:
+
+```bash
+git clone https://github.com/induwaraR98/Spring-Authentication-and-Authorization-and-crud.git
+cd your-repository
+```
+##Configure the Database
+
+Open application.properties or application.yml in your project.
+Update the database configurations for PostgreSQL. Example configuration:
+properties
+Copy
+Edit
+spring.datasource.url=jdbc:postgresql://localhost:5432/your-database
+spring.datasource.username=your-username
+spring.datasource.password=your-password
+spring.jpa.hibernate.ddl-auto=update
+Replace your-database, your-username, and your-password with your actual PostgreSQL database credentials.
+
+Build and Run the Application
+To build and run the application, use Maven:
+
+bash
+Copy
+Edit
+mvn spring-boot:run
+This will start the application, and you can access it at http://localhost:8080.
+
+##Access the Application
+Once the application is running, open a browser and navigate to http://localhost:8080 to interact with it.
+
+##Future Enhancements
+Implement role-based access control (RBAC).
+Add support for JWT-based authentication.
+Include pagination for user lists.
+Add unit and integration tests.
